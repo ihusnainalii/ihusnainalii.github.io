@@ -21,6 +21,13 @@
         }
     </style>
     <style>
+        #projects-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-left: 40px;
+            gap: 20px; /* Space between project items */
+        }
         .skills-container {
             display: grid;
             grid-template-columns: repeat(6, 1fr); /* Three equal columns */
@@ -239,86 +246,7 @@
                             <div class="spacer-single"></div>
                         </div>
                     </div>
-                    <div id="items-carousel" class="owl-carousel owl-theme sequence">
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Firecracker</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/1.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Embracing Hope</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/2.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Red Sunset</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/3.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Petals</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/4.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Mysty Forest</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/5.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item overflow-hidden">
-                            <div class="wow custom-anim-right">
-                                <div class="card-image-1 mod-c">
-                                    <a href="project-single-light-1.html">
-                                        <div class="d-text">
-                                            <h3>Orange Girl</h3>
-                                            <h5 class="d-tag">website</h5>
-                                        </div>                                    
-                                        <img src="images/gallery/6.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="items-carousel" class="owl-carousel owl-theme sequence"></div>
                 </div>
             </section>
 
@@ -597,6 +525,9 @@
                       <span class="d-item-txt">Photography</span>
                       <span class="d-item-display">
                       </span>
+                      <span class="d-item-txt line">Software Development</span>
+                      <span class="d-item-display">
+                      </span>
                      </div>
                   </div>
                 </div>
@@ -615,9 +546,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="https://www.facebook.com/husnain.ali.1428/"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="https://x.com/imiosengineer/"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/husnain-ali-819007108/"><i class="fa fa-linkedin fa-lg"></i></a>
                         </div>
                     </div>
                 </div>
@@ -636,6 +567,7 @@
     <script src="js/skills.js"></script>
     <script src="js/architectures.js"></script>
     <script src="js/tools.js"></script>
+    <script src="js/projects.js"></script>
     <script>
     jQuery(function($) {
         $('.g-recaptcha').attr('data-theme', 'dark');
