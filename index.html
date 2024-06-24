@@ -44,6 +44,23 @@
         .rating {
             color: #007bff;
         }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 200px;
+        }
+
+        .download-button:hover {
+            background-color: #313131;
+            color: #fff;
+        }
     </style>
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
 </head>
@@ -60,7 +77,7 @@
                                 <div class="de-flex-col">
                                     <!-- logo begin -->
                                     <div id="logo">
-                                        <a href="index.html">
+                                        <a href="index.html" style="background-color: white;">
                                             I'm Husnain
                                         </a>
                                     </div>
@@ -184,6 +201,9 @@
                             <p class="no-bottom">
                                 Starting as an intrnee iOS developer back in <strong>2017</strong>, then advanced to a lead role in <strong>2022</strong>, driven by my enthusiasm for technology and a continuous quest for improvement. <br><br>My expertise spans across various platforms, including <strong>iOS, iPadOS, macOS, tvOS, and watchOS</strong> and <strong>watchOS</strong>. Currently, I aspire to broaden my horizons as an expert iOS and Hybrid App Developer, focusing on delivering the smoothest user experiences possible.
                             </p>
+
+                            <div class="spacer-single"></div>                         
+                                <a id="downloadResume" class="download-button" href="#">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -604,6 +624,7 @@
     <script src="js/tools.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/blogs.js"></script>
+    <script src="js/openResume.js"></script>
     <script>
     jQuery(function($) {
         $('.g-recaptcha').attr('data-theme', 'dark');
