@@ -249,11 +249,11 @@
     function load_owl() {
         jQuery("#items-carousel").owlCarousel({
             center: false,
-            rewind: true,
+            rewind: false,
             margin: 25,
             nav: true,
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-            dots: false,
+            dots: true,
             responsive: {
                 1000: {
                     items: 3
@@ -330,7 +330,7 @@
             margin: 0,
             nav: true,
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-            dots: false
+            dots: true
         });
 
         jQuery("#before-after-carousel-big").owlCarousel({
@@ -353,7 +353,7 @@
             margin: 25,
             nav: true,
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-            dots: false,
+            dots: true,
             responsive: {
                 1000: {
                     items: 5
