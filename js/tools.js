@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const tools = [
         { name: 'XCode'},
-        { name: 'Visual Studio'},
-        { name: 'Source Tree'},
+        { name: 'Visual studio code'},
+        { name: 'SourceTree' },
         { name: 'Github Desktop'},
         { name: 'Sketch'},
         { name: 'Figma'},
@@ -10,7 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: 'Jira'},
         { name: 'Postman'},
         { name: 'MongoDB Studio'},
-        { name: 'XAMPP'}
+        { name: 'XAMPP'},
+        { name: 'Lens' },
+        { name: 'pgAdmin' },
+        { name: 'SSMS (SQL Server Management Studio)' },
+        { name: 'Docker Desktop' },
+        { name: 'Terraform CLI' },
+        { name: 'AWS CLI' },
+        { name: 'GitHub Actions' },
+        { name: 'Jenkins' },
+        { name: 'Xcode Cloud' },
+        { name: 'Fastlane' },
+        { name: 'MongoDB Compass' },
+        { name: 'MySQL Workbench' },
+        { name: 'CloudWatch Console' },
+        { name: 'Putty / Terminal / iTerm' }
     ];
 
     const skillsContainer = document.getElementById('tools-container');
