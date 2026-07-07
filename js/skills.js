@@ -1,61 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
     const skills = [
-        { name: 'SwiftUI'},
-        { name: 'Combine'},
-        { name: 'RxSwift'},
-        { name: 'ARkit'},
-        { name: 'RealityKit'},
-        { name: 'Socket.io'},
-        { name: 'CocaPods'},
-        { name: 'SPM'},
-        { name: 'CoreData'},
-        { name: 'Realm'},
-        { name: 'SQLite'},
-        { name: 'GraphQL'},
-        { name: 'Apollo'},
-        { name: 'Amplify'},
-        { name: 'Async Programming'},
-        { name: 'Core Animation'},
-        { name: 'Core Graphics '},
-        { name: 'Auto layouts'},
-        { name: 'Interface Builder'},
-        { name: 'CoreML'},
-        { name: 'Firebase'},
-        { name: 'Google Maps'},
-        { name: 'MapKit'},
-        { name: 'Tensor Flow'},
-        { name: 'Vision'},
-        { name: 'C-based libraries'},
-        { name: 'CI/CD'},
-        { name: 'xcodeCloud'},
-        { name: 'Fastlane'},
-        { name: 'Unit Testing'},
-        { name: 'UI Testing'},
-        { name: 'TDD'},
-        { name: 'Integration testing'},
-        { name: 'Push Notification'},
-        { name: 'REST API'},
-        { name: 'Social Media API'},
-        { name: 'Payment gateways'},
-        { name: 'Multi-threading'},
-        { name: 'Memory Management'},
-        { name: 'Version Control with Git'},
-        { name: 'Code Review'},
-        { name: 'Debugging'},
-        { name: 'Instruments'},
+        { name: 'Swift' }, { name: 'SwiftUI' }, { name: 'Objective-C' }, { name: 'UIKit' },
+        { name: 'Combine' }, { name: 'RxSwift' }, { name: 'Async/Await' },
+        { name: 'ARKit' }, { name: 'RealityKit' }, { name: 'CoreML' }, { name: 'Vision' },
+        { name: 'CoreData' }, { name: 'SwiftData' }, { name: 'Realm' }, { name: 'SQLite' },
+        { name: 'Core Animation' }, { name: 'Core Graphics' }, { name: 'CoreLocation' },
+        { name: 'MapKit' }, { name: 'StoreKit' }, { name: 'HealthKit' }, { name: 'WatchKit' },
+        { name: 'WidgetKit' }, { name: 'App Clips' }, { name: 'tvOS' }, { name: 'iPadOS' },
+        { name: 'Auto Layouts' }, { name: 'Interface Builder' }, { name: 'Dark Mode' },
+        { name: 'Accessibility (VoiceOver)' }, { name: 'Localization' }, { name: 'Biometric Auth' },
+        { name: 'Keychain' }, { name: 'iBeacon' }, { name: 'Bluetooth/BLE' },
+        { name: 'Deep Linking' }, { name: 'Universal Links' }, { name: 'Background Processing' },
+        { name: 'Notification Service Extension' }, { name: 'REST API' }, { name: 'GraphQL' },
+        { name: 'Apollo' }, { name: 'Amplify' }, { name: 'Socket.io' }, { name: 'Firebase' },
+        { name: 'Google Maps' }, { name: 'TensorFlow' }, { name: 'Social Media API' },
+        { name: 'Payment Gateways' }, { name: 'CocoaPods' }, { name: 'Swift Package Manager' },
+        { name: 'React Native' }, { name: 'Flutter' }, { name: 'Unit Testing' },
+        { name: 'UI Testing' }, { name: 'TDD' }, { name: 'XCTest' }, { name: 'Snapshot Testing' },
+        { name: 'Quick/Nimble' }, { name: 'Integration Testing' }, { name: 'Xcode Cloud' },
+        { name: 'Fastlane' }, { name: 'CI/CD' }, { name: 'Instruments & Profiling' },
+        { name: 'Memory Management' }, { name: 'Memory Leak Detection' }, { name: 'Multi-threading' },
+        { name: 'Push Notifications' }, { name: 'Version Control (Git)' },
+        { name: 'Code Review' }, { name: 'Debugging' }, { name: 'C-based Libraries' },
     ];
 
-    const skillsContainer = document.getElementById('skills-container');
-
-    // Loop through skills array and generate HTML for each skill
-    skills.forEach(skill => {
-        const skillHTML = `
-            <div class="skill-item">
-                <p class="skill-title">${skill.name}</p>
-            </div>
-        `;
-        
-        // Append the generated HTML to the skillsContainer
-        skillsContainer.innerHTML += skillHTML;
+    const container = document.getElementById('all-skills-container');
+    skills.forEach((skill, index) => {
+        const delay = (index * 0.02).toFixed(2);
+        container.innerHTML += `<div class="skill-item wow fadeInUp" data-wow-delay="${delay}s" data-category="mobile"><span class="skill-badge badge-mobile">${skill.name}</span></div>`;
     });
 });

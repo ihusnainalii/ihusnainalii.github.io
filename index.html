@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <title>Husnain Ali - Portfolio</title>
+    <title>Husnain Ali | Principal DevOps Engineer & AWS Certified | Lead iOS Flutter React Native Developer | 9 Years Experience</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Personal portfolio website" name="an iOS and hybrid mobile application developer" />
-    <meta content="iOS app development, mobile app development, iPhone app developer, iPad app developer, Swift development, Objective-C, Xcode, ARKit, Core ML, SwiftUI, UIKit, custom iOS app, enterprise iOS app, e-commerce app (iOS), gaming app (iOS), social media app (iOS), productivity app (iOS), entertainment app (iOS), iOS app design, iOS app prototyping, iOS app testing, App Store optimization (ASO)" name="keywords" />
-    <meta content="Husnain Ali" name="author" />
+    <meta name="description" content="Husnain Ali, Principal DevOps Engineer with 4 years DevOps and 9 years total software engineering experience. AWS Certified DevOps Engineer Professional. Expert in Kubernetes EKS, Terraform, CI/CD automation, ArgoCD, and AWS cloud-native infrastructure. Lead Mobile Developer with 7 years iOS, Flutter, and React Native experience. 30+ enterprise apps delivered. Based in Lahore, Pakistan." />
+    <meta name="keywords" content="DevOps Engineer Lahore Pakistan, AWS Certified DevOps Engineer Professional, Kubernetes EKS, Terraform, CI/CD automation, GitOps ArgoCD FluxCD, Principal DevOps Engineer Pakistan, iOS developer Swift SwiftUI, Flutter developer, React Native developer, lead mobile engineer, Husnain Ali DevOps, ILI Digital, cloud infrastructure architect, PCI DSS AWS, Helm Kustomize, infrastructure as code IaC" />
+    <meta name="author" content="Husnain Ali" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Husnain Ali | Principal DevOps Engineer & Lead Mobile Developer" />
+    <meta property="og:description" content="9 years software engineering: 4 years DevOps (AWS, Kubernetes, Terraform, CI/CD) and 7 years as mobile lead (iOS, Flutter, React Native). AWS Certified. Lahore, Pakistan." />
+    <meta property="og:type" content="website" />
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
@@ -22,29 +26,24 @@
         }
     </style>
     <style>
-        #projects-container {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding-left: 40px;
-            gap: 20px; /* Space between project items */
+        /* force white social icons inside hero regardless of framework */
+        .hero-navy .social-icons a,
+        .hero-navy .social-icons a i,
+        .hero-side-socials a,
+        .hero-side-socials a i {
+            color: #ffffff !important;
         }
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr); /* Three equal columns */
-            gap: 0px; /* Gap between columns */
-            padding-left: 40px; /* Left padding for skills container */
-            margin-top: -30px;
+        .hero-navy .social-icons a:hover,
+        .hero-navy .social-icons a:hover i,
+        .hero-side-socials a:hover,
+        .hero-side-socials a:hover i {
+            color: #20C997 !important;
         }
-        .skill-item {
-            margin-bottom: -10px; /* Margin for spacing between skill items */
+        .hero-side-heading {
+            color: #ffffff !important;
         }
-        .skill-title {
-            font-weight: normal;
-        }
-        .rating {
-            color: #007bff;
-        }
+    </style>
+    <style>
         .download-button {
             display: inline-block;
             padding: 10px 20px;
@@ -57,13 +56,13 @@
             transition: background-color 0.3s ease;
             width: 200px;
         }
-
         .download-button:hover {
             background-color: #313131;
             color: #fff;
         }
     </style>
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom-style-6.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="onepage">
@@ -104,9 +103,10 @@
             <div class="mainmenu-v2-wrap">
                 <ul id="mainmenu-v2">
                     <li><a class="active" href="#top">Home<span></span></a></li>
-                    <li><a href="#section-about">About me<span></span></a></li>
+                    <li><a href="#section-about">About Me<span></span></a></li>
                     <li><a href="#section-services">What I Do<span></span></a></li>
-                    <li><a href="#section-portfolio">Portfolio<span></span></a></li>
+                    <li><a href="#section-portfolio">Mobile Works<span></span></a></li>
+                    <li><a href="#section-devops-works">DevOps Works<span></span></a></li>
                     <li><a href="#section-resume">My Resume<span></span></a></li>
                     <li><a href="#section-blog">Blog<span></span></a></li>
                     <li><a href="#section-contact">Contact Me<span></span></a></li>
@@ -134,78 +134,86 @@
             </div>
              <!-- load external content close -->
 
-            <section aria-label="section" class="jarallax no-top no-bottom section-light">
-                <img src="images/background/pexels-zarak-khan-2704050-4256211.jpg" class="jarallax-img" alt="">
-                <div class="v-center">
+            <section aria-label="section" class="no-top no-bottom hero-navy" style="background-color:#070d1f!important;position:relative;overflow:hidden;">
+                <div class="hero-dot-texture"></div>
+                <div class="v-center" style="position:relative;z-index:2;">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-10">
-                                <h5 class="wow fadeInUp" data-wow-delay=".4s">Welcome</h5>
+                                <h5 class="section-eyebrow wow fadeInUp" data-wow-delay=".4s">Welcome</h5>
                                 <div class="spacer-10"></div>
-                                <div class="h1_big text-dark wow fadeInUp" data-wow-delay=".10s">I'm
+                                <div class="h1_big wow fadeInUp" data-wow-delay=".10s" style="color:#ffffff;">I'm
                                     <div class="typed-strings">
                                         <p>Husnain Ali</p>
-                                        <p>AWS Certified Cloud Professional</p>  
-                                        <p>Mobile App Architect</p>            
-                                        <p>Senior iOS Developer</p>                                        
-                                        <p>React Native Developer</p>    
-                                        <p>Flutter Developer</p>
-                                        <p>CI/CD Pipeline Specialist</p>
+                                        <p>Principal DevOps Engineer</p>
+                                        <p>AWS Certified Cloud Professional</p>
+                                        <p>Kubernetes &amp; CI/CD Specialist</p>
+                                        <p>Lead iOS Developer</p>
+                                        <p>Flutter &amp; React Native Lead</p>
+                                        <p>Mobile App Architect</p>
                                     </div>
                                     <div class="typed"></div>
                                 </div>
                                 <div class="spacer-20"></div>
-                                <p class="lead wow fadeInUp" data-wow-delay="1s">Certified AWS DevOps professional <br>and experienced mobile application developer <br>with over 8 years of experience, based in <br>Lahore, Pakistan.</p>
+                                <p class="lead wow fadeInUp" data-wow-delay="1s" style="color:rgba(255,255,255,0.85);">Principal Software Engineer &amp; AWS Certified Cloud Professional,<br>based in Lahore, Pakistan.</p>
+                                <div class="hero-tags wow fadeInUp" data-wow-delay="1.2s">
+                                    <span class="hero-tag">DevOps</span>
+                                    <span class="hero-tag">AWS</span>
+                                    <span class="hero-tag">Kubernetes</span>
+                                    <span class="hero-tag">Terraform</span>
+                                    <span class="hero-tag">CI/CD</span>
+                                    <span class="hero-tag">iOS</span>
+                                    <span class="hero-tag">Flutter</span>
+                                    <span class="hero-tag">React Native</span>
+                                </div>
 
                             </div>
 
                             <div class="col-lg-2">
-                                <h6>Let's Work Together</h6>
-                                I'am available at<br>
-                                <a class="text-dark" href="#">imiosengineer@gmail.com</a><br>
-                                +92 308 8715434
-
-                                <div class="spacer-single"></div>
-
-                                <div class="social-icons">
-                                    <a href="https://github.com/ihusnainalii" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                                    <a href="https://medium.com/@husnainali593" target="_blank"><i class="fab fa-medium fa-lg"></i></a>
-                                    <a href="https://www.linkedin.com/in/husnain-ali-819007108/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                                <div class="hero-side-block">
+                                    <h6 class="hero-side-heading" style="color:#ffffff!important;">Let's Work Together</h6>
+                                    <p class="hero-side-sub">Available on WhatsApp</p>
+                                    <a class="whatsapp-btn hero-side-wa" href="https://wa.me/923088715434" target="_blank">
+                                        <i class="fab fa-whatsapp"></i> +92 308 8715434
+                                    </a>
+                                    <div class="hero-side-socials">
+                                        <a href="https://github.com/ihusnainalii" target="_blank" style="color:#ffffff!important;"><i class="fab fa-github fa-lg" style="color:#ffffff!important;"></i></a>
+                                        <a href="https://medium.com/@husnainali593" target="_blank" style="color:#ffffff!important;"><i class="fab fa-medium fa-lg" style="color:#ffffff!important;"></i></a>
+                                        <a href="https://www.linkedin.com/in/husnain-ali-819007108/" target="_blank" style="color:#ffffff!important;"><i class="fab fa-linkedin fa-lg" style="color:#ffffff!important;"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay=".8s">
-                    <span class="mouse fadeScroll relative" data-scroll-speed="10">
-                        <span class="scroll"></span>
+                    <span class="mouse fadeScroll relative" data-scroll-speed="10" style="border-color:rgba(32,201,151,0.6);">
+                        <span class="scroll" style="background:var(--primary-color);"></span>
                     </span>
                 </a>
-                <div class="de-gradient-edge-bottom"></div>
             </section>
             <section id="section-about" class="section-light">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 wow fadeInUp">
-                            <h5 class="wow fadeInUp">About Me</h5>
-                            <h2 class="wow fadeInUp">Greetings! I am a <strong>AWS Certified DevOps Engineer</strong> and <strong>experienced mobile application engineer</strong> with over <strong>eight years</strong> of experience developing efficient, scalable, and impactful software solutions.</h2>
+                            <h5 class="section-eyebrow wow fadeInUp">About Me</h5>
+                            <h2 class="wow fadeInUp">Greetings! I am a <strong>Principal DevOps Engineer</strong> and <strong>AWS Certified Cloud Professional</strong> with <strong>9 years</strong> of software engineering experience ,  4 years in DevOps and 7 years as a mobile lead.</h2>
                         </div>
                     </div>
                     <div class="spacer-single"></div>
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 mb-sm-30">
                             <figure class="cap-front overflow-hidden" data-bottom-top="transform: translateY(50px);" data-top-bottom="transform: translateY(-50px);">
-                                <img src="images/12.png" class="img-fluid wow custom-anim-right" alt="">
-                                <figcaption class="wow fadeInRight" data-wow-delay="1.2s">I can work from everyhere.</figcaption>
+                                <img src="images/profile.JPG" class="img-fluid wow custom-anim-right" alt="Husnain Ali - Principal DevOps Engineer">
+                                <figcaption class="wow fadeInRight" data-wow-delay="1.2s">Leading DevOps & Mobile from Lahore, Pakistan. Available remotely.</figcaption>
                             </figure>
                         </div>
                         <div class="col-lg-6 wow fadeInUp">
-                            <p>My passion lies in creating seamless user experiences through cutting-edge iOS applications and ensuring robust, scalable infrastructure through modern DevOps practices. Over the years, I have honed my skills in identifying and resolving complex issues, optimizing workflows, and implementing innovative features that enhance both functionality and performance.</p>
+                            <p>I am a Principal DevOps Engineer and AWS Certified Cloud Professional with <strong>9 years</strong> of software engineering experience ,  <strong>4 dedicated years in DevOps engineering</strong> and <strong>7 years as a mobile engineering lead</strong> specialising in iOS, Flutter, and React Native.</p>
 
-                            <p class="no-bottom">
-                                Starting as an intern iOS developer back in <strong>2017</strong>, I advanced to a lead role in <strong>2022</strong>, driven by my enthusiasm for technology and a continuous quest for improvement. <br><br>
-                                My expertise spans across various Apple platforms, including <strong>iOS, iPadOS, macOS, tvOS, and watchOS</strong>, while also extending into <strong>DevOps engineering</strong>, focusing on CI/CD pipelines, infrastructure automation, and cloud-native deployments. Currently, I aspire to broaden my horizons as an expert iOS, Hybrid App Developer, and DevOps Specialist, delivering seamless user experiences backed by resilient, scalable infrastructure.
-                            </p>
+                            <p>My path into DevOps was sparked entirely by <strong>CI/CD automation</strong>. While serving as Lead iOS Engineer, I took ownership of the mobile release pipeline ,  building automated workflows with Fastlane and Xcode Cloud. That hands-on experience ignited a deep passion for infrastructure, automation, and scalable delivery systems. What started as improving app deployment grew into architecting full cloud environments on AWS. From <strong>January 2022</strong>, I transitioned into DevOps engineering while continuing to lead the mobile team in parallel ,  and I have been doing both ever since.</p>
+
+                            <p class="no-bottom">Today, as <strong>Principal Software Engineer</strong> at ILI.DIGITAL GmbH, I wear two hats simultaneously. On the DevOps side, I design and manage cloud-native AWS infrastructure, Kubernetes (EKS) clusters with <strong>2+ years of production experience</strong>, Terraform / Terragrunt IaC, GitOps with ArgoCD and FluxCD, and DevSecOps practices including SonarQube, Trivy, PCI DSS, and HIPAA compliance. On the mobile side, I lead the engineering team delivering enterprise iOS, Flutter, and React Native applications ,  <strong>30+ apps shipped</strong> with 4.5+ App Store ratings for clients across Europe, the Middle East, and Asia. That overlap is my edge: I architect the cloud infrastructure and ship the apps that run on it.</p>
 
                             <div class="spacer-single"></div>                         
                             <a id="downloadResume" class="download-button" href="#">Download Resume</a>
@@ -216,53 +224,71 @@
 
             <section id="section-services" class="bg-light-2 section-light">
                 <div class="container">
-                    <div class="row gx-5">
-                        <div class="col-lg-6 mb-sm-30">
-                            <h5 class="wow fadeInUp">What I Do</h5>
-                            <h2 class="wow fadeInUp">Where creativity meets functionality, and every click tells a unique story.</h2>
-                            <p class="wow fadeInUp">I'm not just a service provider; I'm a creative storyteller, a problem solver, and your partner in turning imagination into reality. Here in my creative haven, we embark on a journey where every idea, every project, is an opportunity to craft something truly unique.</p>
+                    <div class="row">
+                        <div class="col-lg-8 wow fadeInUp">
+                            <h5 class="section-eyebrow">What I Do</h5>
+                            <h2>Engineering at the intersection of cloud infrastructure and mobile development.</h2>
+                            <p class="lead" style="margin-top:16px;">I design and deliver production-grade DevOps systems and enterprise mobile applications, leading both disciplines simultaneously with 9 years of hands-on engineering experience.</p>
+                        </div>
+                    </div>
 
-                            <div class="spacer-single"></div>
+                    <div class="spacer-single"></div>
 
-                            <div class="de-service-tab-a wow fadeInUp">
-                                <div class="d-item active" data-tab="#de-service-4" data-num="04">
-                                    <h3>DevOps Engineering & Cloud Infrastructure</h3>
-                                    <p>Beyond mobile development, I specialize in DevOps practices including CI/CD pipeline automation, infrastructure as code (IaC), containerization with Docker, and scalable deployments on AWS Cloud. I focus on creating secure, efficient, and resilient cloud environments that support modern mobile applications at scale.</p>
-                                </div>
-                                <div class="d-item" data-tab="#de-service-1" data-num="01">
-                                    <h3>Native or Cross-App Development</h3>
-                                    <p>My versatility spans both iOS and hybrid platforms, enabling me to handle diverse mobile app projects. I specialize in cross-platform development with React Native and Flutter, ensuring adaptable solutions that meet project needs efficiently, whether solo or collaboratively.</p>
-                                </div>
-
-                                <div class="d-item" data-tab="#de-service-2" data-num="02">
-                                    <h3>Backend and Database Expertise</h3>
-                                    <p>While my primary focus is on mobile development, I also have experience setting up backend solutions such as databases and authentication protocols, as well as developing web applications for my projects.</p>
-                                </div>
-                                
-                                <div class="d-item" data-tab="#de-service-3" data-num="03">
-                                    <h3>UX Design: Crafting Intuitive Digital Experiences</h3>
-                                    <p>As a mobile developer, I understand the importance of good UX design principles. In addition to utilizing UX prototyping tool Figma, I have also gained proficiency with other design software such as Sketch, Zeplin, and Affinity Designer.</p>
-                                </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-cloud"></i></div>
+                                <h4>DevOps & Cloud</h4>
+                                <p>CI/CD pipeline automation, Kubernetes (EKS), Terraform IaC, ArgoCD GitOps, and AWS cloud-native architecture for enterprise-grade, scalable infrastructure.</p>
                             </div>
                         </div>
-
-                        <div class="col-lg-6" data-bottom-top="transform: translateY(-50px);" data-top-bottom="transform: translateY(50px);">
-                            <div class="overflow-hidden">
-                                <div class="de-service-holder-a wow custom-anim-left">
-                                    <h2 class="wow">01</h2>
-                                    <div id="de-service-4" class="active">
-                                        <img src="images/background/image.jpeg" class="img-fluid" alt="">
-                                    </div>
-                                    <div id="de-service-1">
-                                        <img src="images/background/4065617.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div id="de-service-2">
-                                        <img src="images/background/thisisengineering.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div id="de-service-3">
-                                        <img src="images/background/15988491.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-shield-alt"></i></div>
+                                <h4>DevSecOps</h4>
+                                <p>Security-first pipelines with SonarQube, Trivy, Gitleaks, OWASP scanning, and PCI DSS / HIPAA compliance built into the SDLC from day one.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fab fa-apple"></i></div>
+                                <h4>iOS Development</h4>
+                                <p>Native iOS apps in Swift and SwiftUI with clean architecture (MVVM-C, Clean, and VIPER patterns), delivering 30+ enterprise apps with 4.5+ App Store ratings.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-mobile-alt"></i></div>
+                                <h4>Cross-Platform Mobile</h4>
+                                <p>Flutter and React Native development with modular architecture, delivering consistent, high-performance apps across iOS and Android from a single codebase.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-server"></i></div>
+                                <h4>Cloud Architecture</h4>
+                                <p>Multi-account AWS architecture with VPC design, auto-scaling, load balancing, high availability, disaster recovery, and 35%+ infrastructure cost optimisation.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-brain"></i></div>
+                                <h4>AI/ML Infrastructure</h4>
+                                <p>Scalable AI workload deployment using AWS Bedrock, SageMaker, and Textract, integrated with secure API Gateway and document processing pipelines for enterprise clients.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-users"></i></div>
+                                <h4>Team Leadership</h4>
+                                <p>Leading and mentoring cross-functional engineering teams across DevOps and mobile disciplines, driving code quality, architecture standards, and delivery velocity.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="what-i-do-card">
+                                <div class="wid-icon"><i class="fa fa-chart-line"></i></div>
+                                <h4>Observability & Monitoring</h4>
+                                <p>End-to-end observability with Prometheus, Grafana, Datadog, and AWS CloudWatch, providing real-time insight into infrastructure health, performance, and incidents.</p>
                             </div>
                         </div>
                     </div>
@@ -272,136 +298,268 @@
             <section id="section-portfolio" class="bg-light-2 section-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <h5 class="wow fadeInUp">My Works</h5><br>
-                            <h2 class="wow fadeInUp">Crafting Excellence in iOS Development</h2>
+                        <div class="col-lg-8">
+                            <h5 class="section-eyebrow wow fadeInUp">Mobile Works</h5>
+                            <h2 class="wow fadeInUp">Crafting Excellence in iOS &amp; Mobile Development</h2>
+                            <p class="wow fadeInUp">30+ enterprise apps shipped across iOS, tvOS, Flutter, and React Native for clients in Europe, the Middle East, and Asia, with 4.5+ App Store ratings.</p>
                             <div class="spacer-single"></div>
                         </div>
                     </div>
-                    <div id="items-carousel" class="owl-carousel owl-theme sequence"></div>
+                    <div class="devops-works-grid" id="ios-works-container"></div>
+                </div>
+            </section>
+
+            <section id="section-devops-works" class="section-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h5 class="section-eyebrow wow fadeInUp">DevOps Works</h5>
+                            <h2 class="wow fadeInUp">Cloud Infrastructure & DevOps Engineering Projects</h2>
+                            <p class="wow fadeInUp">Enterprise-grade DevOps projects delivered across AWS, Kubernetes, and CI/CD automation ,  spanning cloud modernisation, security compliance, AI/ML infrastructure, and GitOps-driven deployments.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                    <div class="devops-works-grid" id="devops-projects-container"></div>
                 </div>
             </section>
 
             <section id="section-resume" class="section-light">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 wow fadeInUp">
-                            <h5 class="wow fadeInUp">My Resume</h5>
-                            <h2 class="wow fadeInUp">I’m a certified DevOps engineer with a passion for building secure, scalable, and automated infrastructure and an experienced native and hybrid mobile application developer specializing in crafting engaging, intuitive digital experiences.</h2>
-                            <div class="spacer-half"></div>
-                        </div>
-                    </div>
-                    <div class="row gh-5">
-                        <div class="col-lg-6 wow fadeInUp">
-                            <div class="p-0" data-bottom-top="transform: translateY(50px);" data-top-bottom="transform: translateY(-50px);">
-                                <h4 class="s_border">My Experiences</h4>
-                                <div class="spacer-half"></div>
-                                <ul class="d_timeline">
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">Nov 2024 - Present</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Principal Software Engineer</span><span class="d_company">ILI.DIGITAL PVT LTD · Full Time</span>
-                                            I lead a team of iOS engineers in delivering complex, high-performance applications with 4.5+ App Store ratings. 
-                                            Alongside iOS development, I designed and implemented CI/CD pipelines, cutting deployment time by 50 minutes and reducing release issues by 90%. 
-                                            I migrated infrastructure from AWS EC2 to Fargate with auto-scaling, established infrastructure as code (IaC) practices using Terraform and CloudFormation, and enhanced system provisioning speed by 60%. 
-                                            Additionally, I optimized app scalability from 10K to 100K+ users while maintaining a crash rate below 0.5%, and managed comprehensive code reviews, automation testing, and DevOps operations to ensure seamless, scalable product delivery.
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">Oct 2020 - Nov 2024</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Lead iOS Engineer</span><span class="d_company">ILI.DIGITAL PVT LTD · Full Time</span>
-                                            I lead and empower a team of software engineers to develop and deliver highly scalable iOS applications using CI/CD for automated releases, perform technical designs and implementations, review client requirements, and collaborate with cross-functional teams and QA to ensure product quality through code reviews, unit tests, and automation testing.
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">Apr 2020 - Oct 2020</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Senior Software Engineer</span><span class="d_company">ILI.DIGITAL AG · Part Time</span>
-                                            As a part-time Senior Software Engineer, I contributed to the development and delivery of advanced digital solutions. I collaborated with cross-functional teams to ensure high-quality software implementations and leveraged my expertise to support various projects, enhancing the overall product performance and user experience.    
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">Feb 2019 - Oct 2020</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Senior Software Engineer</span><span class="d_company">Arhamsoft PVT LTD · Full Time</span>
-                                            I have extensive experience in mobile application development using Swift and Objective-C with the MVVM design pattern, real-time processing with CoreML, TensorFlow, and ARkit, and developing hybrid applications with React Native. I excel in professional software engineering practices, agile methodologies, and have a solid understanding of state management with Redux. I am proficient in using ALM, JIRA, GitHub, BitBucket, SourceTree, and SVN for code management and defect tracking.
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">July 2018 - Feb 2019</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Software Engineer - iOS</span><span class="d_company">Novatore Solutions PVT LTD · Full Time</span>
-                                            I extensively maintain and develop iOS applications primarily using Swift, with experience in Agile methodology, Core Data, and Realm. I have successfully navigated the Apple Approval Distribution Process, implemented various design patterns, integrated Socket.io for chat applications, and enhanced user experience through usability testing. Additionally, I have expertise in Grand Central Dispatch, memory management, in-app purchases, and push notifications, and I use SVN for version control.
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">Jul 2017 - Jun 2018</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Software Engineer - iOS</span><span class="d_company">Developers Clan · Full Time</span>
-                                            I have extensive experience developing iOS applications using Swift 2/3/4, implementing UI designs with Storyboards and XIB files, and working with third-party libraries such as Parse, Branch, and Crashlytics. I am skilled in creating custom UI components, handling JSON data with Alamofire and AFNetworking, and proficient in the Apple Store app upload process, including TestFlight for beta testing. Additionally, I have collaborated closely with QA teams to address and resolve bugs efficiently.
-                                        </p>
-                                    </li>
-                                </ul>
+                    <div class="row align-items-end">
+                        <div class="col-lg-7 wow fadeInUp">
+                            <h5 class="section-eyebrow">My Resume</h5>
+                            <h2 style="margin-top:0;margin-bottom:16px;">9 Years. Two Disciplines.<br><strong>One Engineer.</strong></h2>
+                            <p style="color:#555;max-width:520px;margin-top:0;">AWS Certified Principal DevOps Engineer and Lead Mobile Developer. I build the cloud infrastructure and ship the apps that run on it, leading both functions simultaneously at ILI.DIGITAL GmbH.</p>
+                            <div class="resume-stats" data-wow-delay="0.2s">
+                                <div class="resume-stat"><span class="resume-stat-num">9</span><span class="resume-stat-label">Years Experience</span></div>
+                                <div class="resume-stat"><span class="resume-stat-num">4</span><span class="resume-stat-label">Years DevOps</span></div>
+                                <div class="resume-stat"><span class="resume-stat-num">7</span><span class="resume-stat-label">Years Mobile Lead</span></div>
+                                <div class="resume-stat"><span class="resume-stat-num">30+</span><span class="resume-stat-label">Apps Shipped</span></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeInUp">
-                            <div class="p-0" data-bottom-top="transform: translateY(-50px);" data-top-bottom="transform: translateY(50px);">
-                                <h4 class="s_border">My Education</h4>
-                                <div class="spacer-half"></div>
-                                <ul class="d_timeline">
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2013 - 2017</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Bachelor of sciences in computer science</span><span class="d_company">The university of lahore</span>
-                                            I graduated from The University of Lahore with a Bachelor's degree in Computer Sciences, specializing in Computer Programming, from 2013 to 2017, achieving a CGPA of 3.34. During my time at the university, I was actively involved in extracurricular activities, serving as the Executive Photographer of the UOL Photography Society. Additionally, I played a key role in organizing departmental get-togethers and competitions, contributing to the vibrant and dynamic campus life at UOL Lahore.
-                                        </p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2010 - 2012</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Intermediate in science</span><span class="d_company">Punjab college of science</span></p>
-                                    </li>
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2008 - 2010</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Matriculation in science</span><span class="d_company">The educators higher school</span></p>
-                                    </li>
-                                </ul>
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="resume-cert-row">
+                                <span class="resume-cert-badge"><i class="fab fa-aws"></i> AWS Certified</span>
+                                <span class="resume-cert-badge"><i class="fa fa-dharmachakra"></i> Kubernetes</span>
+                                <span class="resume-cert-badge"><i class="fab fa-apple"></i> iOS Lead</span>
+                                <span class="resume-cert-badge"><i class="fa fa-layer-group"></i> Terraform IaC</span>
+                                <span class="resume-cert-badge"><i class="fa fa-code-branch"></i> GitOps</span>
+                                <span class="resume-cert-badge"><i class="fa fa-shield-alt"></i> PCI DSS</span>
                             </div>
                         </div>
                     </div>
+                    <div class="spacer-single"></div>
+                    <div class="row g-5">
+                        <!-- EXPERIENCE COLUMN -->
+                        <div class="col-lg-7 wow fadeInUp">
+                            <h4 class="section-col-heading">My Experiences</h4>
+                            <div class="exp-list">
 
-                    <div class="row g-4">
-                        <div class="col-lg-12 wow fadeInUp">
-                            <h4>Language Proficiency in mobile technology</h4>
+                                <!-- ILI DIGITAL GmbH — 4 roles -->
+                                <div class="exp-company-block wow fadeInUp">
+                                    <div class="exp-company-header">
+                                        <div>
+                                            <span class="exp-company-name">ILI.DIGITAL GmbH</span>
+                                            <span class="exp-company-location">Lahore, Pakistan · Remote</span>
+                                        </div>
+                                        <span class="exp-emp-badge emp-fulltime">Full-Time</span>
+                                    </div>
+
+                                    <div class="exp-role">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Principal Software Engineer</span>
+                                            <span class="exp-date">Jan 2024 – Present</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Leading the DevOps engineering function: AWS cloud infrastructure, Kubernetes (EKS), Terraform, ArgoCD, and CI/CD pipelines for enterprise clients</li>
+                                            <li>Simultaneously leading the mobile engineering team, overseeing iOS, Flutter, and React Native development</li>
+                                            <li>Deployed and managed AI/ML services: AWS Bedrock, SageMaker, and Textract for enterprise AI workloads</li>
+                                            <li>Implemented serverless and containerised architectures with Lambda, Fargate, and API Gateway</li>
+                                            <li>Enforced PCI DSS and HIPAA compliance across all cloud infrastructure with audit-ready environments</li>
+                                            <li>Reduced cloud infrastructure spend by 35% through cost optimisation and multi-region DR strategies</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-role exp-role-divider">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Lead iOS Engineer</span>
+                                            <span class="exp-date">May 2021 – Jan 2024</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Led iOS engineering team delivering 15+ enterprise apps with 4.5+ App Store ratings across Europe and the Middle East</li>
+                                            <li>From January 2022, built CI/CD pipelines with Fastlane and Xcode Cloud, which led to managing AWS infrastructure in parallel</li>
+                                            <li>Cut mobile release cycles by 90% through pipeline automation; boosted code quality by 75%</li>
+                                            <li>Scaled apps from 10K to 100K+ users with a crash rate below 0.5%</li>
+                                            <li>Developed hybrid apps in Flutter and React Native with MVVM-C and Clean architectures</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-role exp-role-divider">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Senior iOS Developer</span>
+                                            <span class="exp-date">Oct 2020 – May 2021</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Delivered complex iOS applications with MVVM and Clean architecture patterns</li>
+                                            <li>Integrated payment gateways, real-time chat (Socket.IO), and secure authentication flows</li>
+                                            <li>Collaborated with cross-functional teams and QA to ensure high-quality product delivery</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-role exp-role-divider">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Senior iOS Developer</span>
+                                            <span class="exp-date">Apr 2020 – Oct 2020</span>
+                                            <span class="exp-emp-badge emp-parttime">Part-Time</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Contributed to iOS development part-time while concurrently employed full-time at ArhamSoft</li>
+                                            <li>Supported feature development, code review, and mobile architecture decisions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- ArhamSoft -->
+                                <div class="exp-company-block wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="exp-company-header">
+                                        <div>
+                                            <span class="exp-company-name">ArhamSoft Pvt Ltd</span>
+                                            <span class="exp-company-location">Lahore, Pakistan</span>
+                                        </div>
+                                        <span class="exp-emp-badge emp-fulltime">Full-Time</span>
+                                    </div>
+                                    <div class="exp-role">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Senior Software Engineer · iOS</span>
+                                            <span class="exp-date">Feb 2019 – Oct 2020</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Delivered 10+ complex iOS applications including ARKit-powered and AI-driven solutions</li>
+                                            <li>Developed real-time human pose tracking using ARKit 1/2, CoreML, and TensorFlow Lite</li>
+                                            <li>Migrated legacy apps to MVVM architecture; integrated Google Maps, Firebase, CoreData, and Realm</li>
+                                            <li>Optimised App Store deployment workflows, reducing review and release issues by 40%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Novatore -->
+                                <div class="exp-company-block wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="exp-company-header">
+                                        <div>
+                                            <span class="exp-company-name">Novatore Solutions Pvt Ltd</span>
+                                            <span class="exp-company-location">Lahore, Pakistan</span>
+                                        </div>
+                                        <span class="exp-emp-badge emp-fulltime">Full-Time</span>
+                                    </div>
+                                    <div class="exp-role">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Software Engineer · iOS</span>
+                                            <span class="exp-date">Jul 2018 – Feb 2019</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Developed and maintained iOS applications in Swift using Agile methodology</li>
+                                            <li>Implemented Socket.io for real-time chat, CoreData and Realm for offline data persistence</li>
+                                            <li>Managed in-app purchases, push notifications, and Grand Central Dispatch for threading</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Developers Clan -->
+                                <div class="exp-company-block wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="exp-company-header">
+                                        <div>
+                                            <span class="exp-company-name">Developers Clan</span>
+                                            <span class="exp-company-location">Lahore, Pakistan</span>
+                                        </div>
+                                        <span class="exp-emp-badge emp-fulltime">Full-Time</span>
+                                    </div>
+                                    <div class="exp-role">
+                                        <div class="exp-role-meta">
+                                            <span class="exp-designation">Associate Software Engineer · iOS</span>
+                                            <span class="exp-date">Jul 2017 – Jun 2018</span>
+                                        </div>
+                                        <ul class="exp-bullets">
+                                            <li>Built iOS applications in Swift 2/3/4 with Storyboard and XIB-based UI</li>
+                                            <li>Integrated third-party libraries (Parse, Branch, Crashlytics) and handled JSON with Alamofire</li>
+                                            <li>Managed App Store submissions, TestFlight distribution, and QA bug resolution</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <p class="d_timeline-text">With a strong command of <strong>iOS development</strong>, I specialize in creating intuitive and efficient applications. Additionally, my expertise in <strong>hybrid mobile development</strong> allows me to craft versatile cross-platform solutions. Coupled with a foundational understanding of <strong>backend development</strong>, I strengthen my capabilities across both frontend and backend domains, ensuring comprehensive and effective software solutions.</p>
-                        <div class="row" id="language-items"></div>
-                    </div>
-                    
-                    <div class="spacer-triple"></div>   
 
-                    <div class="row g-4">
-                        <div class="col-lg-12 wow fadeInUp">
-                            <h4>Technical Skills</h4>
+                        <!-- EDUCATION COLUMN -->
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                            <h4 class="section-col-heading">My Education</h4>
+                            <div class="edu-list">
+
+                                <div class="edu-card wow fadeInUp">
+                                    <div class="edu-year-badge">2013 – 2017</div>
+                                    <h5 class="edu-degree">Bachelor of Science in Computer Science</h5>
+                                    <span class="edu-institution"><i class="fa fa-university"></i> The University of Lahore</span>
+                                    <p class="edu-desc">Graduated with CGPA 3.34. Specialised in Computer Programming. Active as Executive Photographer of the UOL Photography Society and organised departmental events and competitions.</p>
+                                </div>
+
+                                <div class="edu-card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="edu-year-badge">2010 – 2012</div>
+                                    <h5 class="edu-degree">Intermediate in Science</h5>
+                                    <span class="edu-institution"><i class="fa fa-university"></i> Punjab College of Science</span>
+                                </div>
+
+                                <div class="edu-card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="edu-year-badge">2008 – 2010</div>
+                                    <h5 class="edu-degree">Matriculation in Science</h5>
+                                    <span class="edu-institution"><i class="fa fa-university"></i> The Educators Higher School</span>
+                                </div>
+
+                            </div>
                         </div>
-                        <p class="d_timeline-text">I possess a diverse skill set in mobile application development and DevOps engineering, encompassing expertise in SwiftUI, Combine, RxSwift, ARKit, CoreData, Firebase, and a range of essential frameworks and tools for delivering robust, scalable mobile solutions. Additionally, I specialize in CI/CD automation, AWS infrastructure, containerization, and infrastructure as code (IaC), ensuring efficient, secure, and resilient application deployments.</p>
-                        <div class="skills-container" id="skills-container"></div>
-                        <br><br>
-                        <div class="skills-container" id="devops-skills-container"></div>
                     </div>
 
-                    <div class="spacer-triple"></div>
-
-                    <div class="row g-4">
-                        <div class="col-lg-12 wow fadeInUp">
-                            <h4>Architecture Patterns</h4>
+                    <!-- Language Proficiency -->
+                    <div class="row g-4 wow fadeInUp">
+                        <div class="col-12">
+                            <div id="lang-proficiency-block">
+                                <h4 class="skills-section-heading">Language Proficiency</h4>
+                                <div class="row g-3" id="language-items"></div>
+                            </div>
                         </div>
-                        <p class="d_timeline-text">Key patterns essential for mobile application development that I have experience working</p>
-                        <div class="skills-container" id="architecture-container"></div>
                     </div>
 
-                    <div class="spacer-triple"></div>
+                    <div class="spacer-double"></div>
 
-                    <div class="row g-4">
-                        <div class="col-lg-12 wow fadeInUp">
-                            <h4>Tools</h4>
+                    <!-- Unified Technical Skills with Filter -->
+                    <div class="row g-4 wow fadeInUp">
+                        <div class="col-lg-12">
+                            <h4 class="skills-section-heading">Technical Skills, Architecture &amp; Tools</h4>
+                            <div class="skills-filter-row">
+                                <button class="skills-filter-btn active" data-filter="all">All</button>
+                                <button class="skills-filter-btn" data-filter="mobile">Mobile &amp; iOS</button>
+                                <button class="skills-filter-btn" data-filter="devops">DevOps &amp; Cloud</button>
+                                <button class="skills-filter-btn" data-filter="arch">Architecture</button>
+                                <button class="skills-filter-btn" data-filter="tools">Tools</button>
+                            </div>
                         </div>
-                        <p class="d_timeline-text">Key tools essential for mobile application development that I have extensive experience working with</p>
-                        <div class="skills-container" id="tools-container"></div>
+                        <div class="all-skills-wrap" id="all-skills-container"></div>
                     </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var btns = document.querySelectorAll('.skills-filter-btn');
+                            btns.forEach(function (btn) {
+                                btn.addEventListener('click', function () {
+                                    btns.forEach(function (b) { b.classList.remove('active'); });
+                                    btn.classList.add('active');
+                                    var filter = btn.getAttribute('data-filter');
+                                    var items = document.querySelectorAll('#all-skills-container .skill-item');
+                                    items.forEach(function (item) {
+                                        item.style.display = (filter === 'all' || item.getAttribute('data-category') === filter) ? '' : 'none';
+                                    });
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </section>
             
@@ -409,7 +567,7 @@
                 <div class="container">
                     <div class="row gx-5">
                         <div class="col-md-4">
-                            <h5 class="wow fadeInUp">Recent Blog</h5><br>
+                            <h5 class="section-eyebrow wow fadeInUp">Recent Blog</h5>
                             <h2 class="wow fadeInUp">Unveiling the world of creativity.</h2>
                         </div>
                         <div class="col-lg-8">
@@ -557,63 +715,82 @@
                 <div class="container">
                     <div class="row gx-5">
                         <div class="col-lg-6">
-                            <h5 class="wow fadeInUp">Contact Me</h5>
+                            <h5 class="section-eyebrow wow fadeInUp">Contact Me</h5>
                             <h2 class="wow fadeInUp">Let's make something great together.</h2>
                         </div>
                         <div class="spacer-single"></div>
-                        <div class="col-md-8  mb-sm-30 wow fadeInUp">   
+                        <div class="col-md-8 mb-sm-30 wow fadeInUp">
                             <div class="contact_form_wrapper">
-                                <form name="contactForm" id="contact_form" class="form-default" method="post" action="#">
+                                <form id="wa_contact_form" class="form-default" onsubmit="sendViaWhatsApp(event)">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="field-set">
-                                                <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name" required>
+                                                <input type="text" id="wa_name" class="form-control" placeholder="Your Name" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="field-set">
-                                                <input type="text" name="Email" id="email" class="form-control" placeholder="Your Email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="field-set">
-                                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
+                                                <input type="email" id="wa_email" class="form-control" placeholder="Your Email (optional)">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="field-set">
-                                        <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
+                                        <textarea id="wa_message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
                                     </div>
-                                    <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>
-                                    <div id='submit' class="mt10">
-                                        <input type='submit' id='send_message' value='Send Message' class="btn-main">
-                                    </div>
-
-                                    <div id="success_message" class='success'>
-                                        Your message has been sent successfully. Refresh this page if you want to send more messages.
-                                    </div>
-                                    <div id="error_message" class='error'>
-                                        Sorry there was an error sending your form.
+                                    <div class="mt10">
+                                        <button type="submit" class="btn-main wa-submit-btn">
+                                            <i class="fab fa-whatsapp"></i> Send Message on WhatsApp
+                                        </button>
                                     </div>
                                 </form>
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="row wow fadeInUp">
-                                <div class="wm-1"></div>
-                                <h6>Email Me</h6>
-                                <p>imiosengineer@gmail.com</p>
-                                
-                                <div class="wm-1"></div>
-                                <h6>Call Me</h6>
-                                <p>+92 308 8715434</p>
-
-                                <div class="wm-1"></div>
-                                <h6>Address</h6>
-                                <p>Sector E, Bahria town Lahore, Pakistan</p>
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="contact-info-block">
+                                <div class="contact-info-item">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div>
+                                        <span class="contact-info-label">WhatsApp / Call</span>
+                                        <a href="https://wa.me/923088715434" target="_blank" class="contact-info-value">+92 308 8715434</a>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div>
+                                        <span class="contact-info-label">Location</span>
+                                        <span class="contact-info-value">Lahore, Pakistan · Remote</span>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <div>
+                                        <span class="contact-info-label">LinkedIn</span>
+                                        <a href="https://www.linkedin.com/in/husnain-ali-819007108/" target="_blank" class="contact-info-value">linkedin.com/in/husnain-ali</a>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="fab fa-github"></i>
+                                    <div>
+                                        <span class="contact-info-label">GitHub</span>
+                                        <a href="https://github.com/ihusnainalii" target="_blank" class="contact-info-value">github.com/ihusnainalii</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>                      
+                        </div>
+
+                        <script>
+                            function sendViaWhatsApp(e) {
+                                e.preventDefault();
+                                var name    = document.getElementById('wa_name').value.trim();
+                                var email   = document.getElementById('wa_email').value.trim();
+                                var message = document.getElementById('wa_message').value.trim();
+                                var text = 'Hi Husnain,\n\nName: ' + name;
+                                if (email) text += '\nEmail: ' + email;
+                                text += '\n\n' + message;
+                                window.open('https://wa.me/923088715434?text=' + encodeURIComponent(text), '_blank');
+                            }
+                        </script>                      
                     </div>
                 </div>
 
@@ -680,9 +857,9 @@
     <script src="js/devopsSkills.js"></script>
     <script src="js/tools.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/devopsProjects.js"></script>
     <script src="js/blogs.js"></script>
     <script src="js/openResume.js"></script>
-    <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js" user-profile="https://topmate.io/embed/profile/husnain_ali?theme=eceff3" btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1" button-text="Let's Connect" position-right="30px" position-bottom="30px" custom-padding="0px" custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer="" ></script>
     <script>
     jQuery(function($) {
         $('.g-recaptcha').attr('data-theme', 'dark');
@@ -706,6 +883,22 @@
         });
     });
     </script>
+    <script>
+        (function () {
+            var header = document.querySelector('header.header-v2');
+            if (!header) return;
+            function onScroll() {
+                if (window.scrollY > 10) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+    </script>
+    <script src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js" user-profile="https://topmate.io/embed/profile/husnain_ali?theme=eceff3" btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}' embed-version="v1" button-text="Let's Connect" position-right="30px" position-bottom="30px" custom-padding="0px" custom-font-size="16px" custom-font-weight="500" custom-width="200px" async="" defer=""></script>
 </body>
 
 </html>

@@ -1,93 +1,123 @@
 const projects = [
     {
         title: "VTryOn Everyone",
-        platform: "iPad Application",
+        type: "ipad",
         url: "https://apps.apple.com/us/app/vtryon-everyone/id1513287455",
-        description: "Virtual TryOn - Try it, then Buy it! It is an advanced virtual shopping experience, which will give users the liberty to try the clothing stuff before buying. By having a virtual try-on environment, they can check what size will suit them as per their body dimensions, hence they could buy suitable products for them. So avoid the hassle of getting unfit clothes while shopping online.",
-        image: "images/projects/VTryOn.jpg"
+        description: "Advanced virtual try-on shopping experience using ARKit and body dimension tracking. Users try clothing virtually before buying.",
+        image: "images/projects/VTryOn.jpg",
+        tags: ["ARKit", "Swift", "CoreML", "iPad", "MVVM"]
     },
     {
         title: "Pretty Pointy",
-        platform: "iOS Mobile App",
+        type: "ios",
         url: "https://itunes.apple.com/ae/app/pretty-pointy-%D8%A8%D8%B1%D9%8A%D8%AA%D9%8A-%D8%A8%D9%88%D9%8A%D9%86%D8%AA%D9%8A/id1367552041?mt=8",
-        description: "A beauty booking experience with Ease & Convenience, wherever you are, whenever you want.",
-        image: "images/projects/PrettyPointy.jpg"
+        description: "Beauty booking platform offering ease and convenience for salon and wellness services on demand.",
+        image: "images/projects/PrettyPointy.jpg",
+        tags: ["Swift", "UIKit", "Firebase", "Payment Gateway", "MVVM"]
     },
     {
         title: "Jonple",
-        platform: "React Native Mobile App",
+        type: "react-native",
         url: "https://apps.apple.com/gb/app/jonple/id1493343667",
-        description: "This app is a source for fitness, tailored workout plans, bespoke nutrition, wellness services, and more. With Jonple you can customize plans and feedback from real fitness, chef, and psychological professionals.",
-        image: "images/projects/jonple.jpg"
+        description: "Fitness and wellness app with tailored workout plans, bespoke nutrition, and real professional coaching.",
+        image: "images/projects/jonple.jpg",
+        tags: ["React Native", "Firebase", "REST API", "Cross-Platform"]
     },
     {
-        title: "Mathlete - Let’s Play Math",
-        platform: "Native iOS App",
+        title: "Mathlete",
+        type: "ios",
         url: "https://apps.apple.com/pk/app/mathlete-lets-play-math/id1498595211",
-        description: "MATHLETE - Let’s Play Math! (A Project of ArhamSoft), has launched a quiz competition “McDonald’s MATHmania” in collaboration with McDonald’s Pakistan, through an interactive math quiz application for students. Students can develop their early math skills such as basic numerical operations while young teens can enhance their expertise on the foundation of mathematics with absolute enjoyment.",
-        image: "images/projects/mathlete.jpg"
+        description: "Interactive math quiz competition app launched in collaboration with McDonald's Pakistan for students.",
+        image: "images/projects/mathlete.jpg",
+        tags: ["Swift", "UIKit", "Firebase", "Game Logic", "MVC"]
     },
     {
         title: "SwiftRyde - Passenger",
-        platform: "Native iOS App",
+        type: "ios",
         url: "https://apps.apple.com/us/app/swiftryde-passenger/id1380744886",
-        description: "Help people with their everyday travel needs. SwfitRyde Driver App is all about flexibility to drive, high payouts, quick cash outs, rewards and more.",
-        image: "images/projects/SwiftRydePassenger.jpg"
+        description: "Ride-hailing passenger app with real-time driver tracking, quick cashout, and flexible travel options.",
+        image: "images/projects/SwiftRydePassenger.jpg",
+        tags: ["Swift", "Google Maps", "Socket.io", "CoreLocation", "MVVM"]
     },
     {
-        title: "RENOLIT APP",
-        platform: "iPad Application",
+        title: "RENOLIT AXS",
+        type: "ipad",
         url: "https://apps.apple.com/de/app/renolit-axs/id1585628382",
-        description: "This is a business app for internal users of RENOLIT, it provides user an ability to make measurements with manual and automatic mode (with ARkit) and decor any surface with our wrapper developed with C++ and OpenCV. Furthermore, user has an ability to store offline data which is then synchronized when the internet is available with both options to upload automatic or manual upload with user settings. Built with an MVVM clean architecture using ARKit, Realm for local storage of data, RxSwift, Alamofire, Crashlytics, OpenCV, and SwiftLint for code analytics.",
-        image: "images/projects/renolit.jpg"
+        description: "Enterprise B2B app with ARKit measurements, surface decoration via C++/OpenCV, and offline data sync.",
+        image: "images/projects/renolit.jpg",
+        tags: ["ARKit", "OpenCV", "C++", "RxSwift", "Realm", "MVVM-C"]
     },
     {
         title: "KSC APP",
-        platform: "iOS Mobile Application",
+        type: "ios",
         url: "https://apps.apple.com/us/app/ksc-app/id1417115202",
-        description: "This is an app developed for KSC football club in which users can see live scores, latest news, and receive latest news and offers from push notifications. Built on MVVM pattern using Firebase, Socket.io (for live scoring), Google AdMob, Alamofire, RxSwift, RxCocoa, Google Analytics, Bluecode (Payment gateway) and Crashlytics.",
-        image: "images/projects/ksc.jpg"
+        description: "Official app for KSC football club — live scores, news, push notifications, and Bluecode payment gateway.",
+        image: "images/projects/ksc.jpg",
+        tags: ["Swift", "Socket.io", "Firebase", "RxSwift", "AdMob", "MVVM"]
     },
     {
-        title: "KSC TV APP",
-        platform: "tvOS App",
+        title: "KSC TV",
+        type: "tvos",
         url: "https://apps.apple.com/de/app/ksc-tv/id1596881456",
-        description: "In the KSC TV app, all videos about Karlsruhe SC are waiting for all fans of the blue and white. Current content about the KSC professionals, everything else that happens in the wildlife park as well as exclusive live streams and DREI60 videos. Built on MVVM pattern using Google AdMob, Alamofire, RxSwift, RxCocoa.",
-        image: "images/projects/ksc_tv.jpg"
+        description: "Official tvOS streaming app for KSC fans — exclusive live streams, DREI60 videos, and club highlights.",
+        image: "images/projects/ksc_tv.jpg",
+        tags: ["tvOS", "Swift", "RxSwift", "Alamofire", "AdMob", "MVVM"]
     },
     {
         title: "StaySafe",
-        platform: "iOS Mobile App",
+        type: "ios",
         url: "https://apps.apple.com/pk/app/staysafe-by-ili-digital/id1562835903",
-        description: "StaySafe is the workplace safety quiz app. This means that while it's fun and playful, the app helps to refresh knowledge, trigger proactivity, and develop more mindfulness. StaySafe offers four different types of questions: Single Choice, Multiple Choice, True or False and Find the Mistake. All questions are linked to images to help users better understand the situation, context and message. The app is designed to be used efficiently at work, with challenging but intuitive questions presented in short game sessions. Built on MVVM pattern using Firebase for push notifications, Socket.io (for gameplay), Alamofire, RxSwift, RxCocoa, Google Analytics, and Crashlytics.",
-        image: "images/projects/staysafe.jpg"
+        description: "Workplace safety quiz app with real-time multiplayer gameplay, image-linked questions, and four question types.",
+        image: "images/projects/staysafe.jpg",
+        tags: ["Swift", "Socket.io", "Firebase", "RxSwift", "MVVM"]
     },
     {
         title: "TE to GO",
-        platform: "iOS Mobile App",
+        type: "ios",
         url: "https://apps.apple.com/pk/app/te-to-go/id1614294679",
-        description: "TE to Go is all about creating a better collaboration with your TE supplier. With TE to Go, the exchange of knowledge and prevention of inefficiencies is easy. In TE to Go, you will get together. One customer solution, one procurement and up to nine team members can build a Team. By playing Te to Go, your team will also collect Te to Go tokens that will allow you to raise your team rank, climb the leaderboard and unlock unique deals, which you only can find within the application. Built on MVVM pattern using Firebase for push notifications, Alamofire, RxSwift, RxCocoa, Google Analytics, and Crashlytics.",
-        image: "images/projects/tetogo.png"
+        description: "Team collaboration and knowledge-sharing platform with token rewards, leaderboards, and team-based gameplay.",
+        image: "images/projects/tetogo.png",
+        tags: ["Swift", "Firebase", "RxSwift", "Alamofire", "MVVM"]
     }
 ];
 
-const container = document.getElementById('items-carousel');
+const platformBadge = {
+    'ios':          { label: 'iOS',          icon: 'fab fa-apple',     cls: 'plt-ios' },
+    'ipad':         { label: 'iPadOS',        icon: 'fab fa-apple',     cls: 'plt-ipad' },
+    'tvos':         { label: 'tvOS',          icon: 'fab fa-apple',     cls: 'plt-tvos' },
+    'react-native': { label: 'React Native',  icon: 'fab fa-react',     cls: 'plt-rn' },
+    'flutter':      { label: 'Flutter',       icon: 'fa fa-mobile-alt', cls: 'plt-flutter' },
+};
 
-projects.forEach(project => {
-    const projectHTML = `
-        <div class="item overflow-hidden">
-            <div class="wow custom-anim-right">
-                <div class="card-image-1 mod-c">
-                    <a href="${project.url}" target="_blank">
-                        <div class="d-text">
-                            <h3>${project.title}</h3>
-                            <h5 class="d-tag">${project.platform}</h5>
-                        </div>
-                        <img src="${project.image}" class="img-fluid" alt="${project.title}">
-                    </a>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById('ios-works-container');
+    if (!container) return;
+
+    projects.forEach((project, index) => {
+        const delay   = (index * 0.08).toFixed(2);
+        const badge   = platformBadge[project.type] || platformBadge['ios'];
+        const tagsHTML = project.tags.map(t => `<span class="devops-tag">${t}</span>`).join('');
+
+        const cardHTML = `
+            <div class="ios-card wow fadeInUp" data-wow-delay="${delay}s">
+                <div class="ios-card-body">
+                    <div class="ios-card-title-row">
+                        <h4 class="devops-card-title" style="margin:0;flex:1;">${project.title}</h4>
+                        <span class="ios-platform-badge ${badge.cls}">
+                            <i class="${badge.icon}"></i> ${badge.label}
+                        </span>
+                    </div>
+                    <p class="devops-card-desc">${project.description}</p>
+                    <div class="devops-card-tags">${tagsHTML}</div>
                 </div>
+                <a href="${project.url}" target="_blank" class="ios-card-overlay" aria-label="View ${project.title}">
+                    <img src="${project.image}" alt="${project.title}" class="ios-card-img">
+                    <div class="ios-card-overlay-label">
+                        <i class="fab fa-apple"></i> View on App Store
+                    </div>
+                </a>
             </div>
-        </div>
-    `;
-    container.innerHTML += projectHTML;
+        `;
+        container.innerHTML += cardHTML;
+    });
 });
