@@ -5,12 +5,14 @@
     <title>Husnain Ali | Principal Software Engineer, DevOps &amp; Mobile</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://topmate-embed.s3.ap-south-1.amazonaws.com https://topmate.io; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://topmate-embed.s3.ap-south-1.amazonaws.com; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://topmate-embed.s3.ap-south-1.amazonaws.com https://topmate.io; frame-src https://topmate.io; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" />
 
     <!-- Primary SEO -->
     <meta name="description" content="Principal Software Engineer, 9 years across DevOps and mobile. AWS Certified DevOps Engineer Professional: Kubernetes, Terraform, CI/CD, plus iOS, Swift and Flutter. Riyadh, Saudi Arabia." />
     <meta name="keywords" content="Husnain Ali, Principal Software Engineer, DevOps Engineer Riyadh, AWS Certified DevOps Engineer Professional, Kubernetes EKS, Terraform, CI/CD, GitOps ArgoCD FluxCD, iOS developer, Swift, SwiftUI, Flutter, React Native, cloud architect, Saudi Arabia" />
     <meta name="author" content="Husnain Ali" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="canonical" href="https://ihusnainalii.github.io/" />
     <meta name="theme-color" content="#070d1f" />
 
@@ -46,7 +48,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
     <link href="css/plugins.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
         :root {
             --primary-color: #20C997;
@@ -736,7 +738,7 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
                             <h2 class="wow fadeInUp">Talks, articles, and field notes.</h2>
                         </div>
                         <div class="col-lg-8">
-                            <div id="carousel-blog-2-cols" class="owl-carousel wow fadeInUp">
+                            <div id="posts-carousel" class="owl-carousel wow fadeInUp">
                                 <div class="bloglist item">
                                     <div class="post-content">
                                         <div class="post-image">
@@ -1028,7 +1030,7 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
                                 var text = 'Hi Husnain, this is ' + name + '.';
                                 if (email) text += ' You can reach me at ' + email + '.';
                                 text += '\n\n' + message;
-                                window.open('https://wa.me/923088715434?text=' + encodeURIComponent(text), '_blank');
+                                window.open('https://wa.me/923088715434?text=' + encodeURIComponent(text), '_blank', 'noopener,noreferrer');
                             }
                         </script>                      
                     </div>
@@ -1349,20 +1351,22 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
         })();
     </script>
     <script>
-        // Posts carousel: re-init with prev/next arrows + dots (swipe already works).
-        // Runs after designesia.js has initialised the carousel on window load.
+        // Posts carousel. The id is deliberately NOT one designesia.js knows
+        // (#blog-carousel / #carousel-blog-2-cols), so the theme never touches it
+        // and this is the one and only owl init — no double nav / dots.
         jQuery(window).on('load', function () {
-            var $c = jQuery('#carousel-blog-2-cols');
+            var $c = jQuery('#posts-carousel');
             if (!$c.length || typeof $c.owlCarousel !== 'function') return;
-            if ($c.hasClass('owl-loaded')) {
-                $c.trigger('destroy.owl.carousel');
-                $c.removeClass('owl-loaded owl-hidden owl-drag owl-grab');
-            }
+            if ($c.data('cdInit')) return;
+            $c.data('cdInit', true);
+
             $c.owlCarousel({
                 items: 2,
                 margin: 25,
-                loop: true,
+                loop: false,
+                rewind: true,
                 dots: true,
+                slideBy: 'page',
                 nav: true,
                 navText: [
                     '<i class="fa fa-angle-left" aria-hidden="true"></i><span class="sr-only">Previous</span>',

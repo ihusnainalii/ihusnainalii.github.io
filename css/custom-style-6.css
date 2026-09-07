@@ -1586,14 +1586,14 @@ a.contact-info-value:hover {
 /* ============================================================
    BLOG / POSTS — uniform square thumbnails, sharp corners, center-cropped
    ============================================================ */
-#carousel-blog-2-cols .post-image {
+#posts-carousel .post-image {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 0;
 }
 
-#carousel-blog-2-cols .post-image img,
-#carousel-blog-2-cols .post-image:hover img {
+#posts-carousel .post-image img,
+#posts-carousel .post-image:hover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1603,13 +1603,13 @@ a.contact-info-value:hover {
 }
 
 /* prev / next arrows */
-#carousel-blog-2-cols .owl-nav {
+#posts-carousel .owl-nav {
     display: block;
     margin-top: 0;
 }
 
-#carousel-blog-2-cols .owl-prev,
-#carousel-blog-2-cols .owl-next {
+#posts-carousel .owl-prev,
+#posts-carousel .owl-next {
     position: absolute;
     top: 34%;
     transform: translateY(-50%);
@@ -1625,34 +1625,34 @@ a.contact-info-value:hover {
     transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
-#carousel-blog-2-cols .owl-prev { left: -16px; }
-#carousel-blog-2-cols .owl-next { right: -16px; }
+#posts-carousel .owl-prev { left: -16px; }
+#posts-carousel .owl-next { right: -16px; }
 
-#carousel-blog-2-cols .owl-prev i,
-#carousel-blog-2-cols .owl-next i {
+#posts-carousel .owl-prev i,
+#posts-carousel .owl-next i {
     font-size: 20px;
     line-height: 1;
 }
 
-#carousel-blog-2-cols .owl-prev:hover,
-#carousel-blog-2-cols .owl-next:hover {
+#posts-carousel .owl-prev:hover,
+#posts-carousel .owl-next:hover {
     background: var(--primary-color);
     color: #06231b;
     transform: translateY(-50%) scale(1.06);
 }
 
-#carousel-blog-2-cols .owl-prev.disabled,
-#carousel-blog-2-cols .owl-next.disabled {
+#posts-carousel .owl-prev.disabled,
+#posts-carousel .owl-next.disabled {
     opacity: 0.35;
     pointer-events: none;
 }
 
-#carousel-blog-2-cols .owl-dots {
+#posts-carousel .owl-dots {
     text-align: center;
     margin-top: 22px;
 }
 
-#carousel-blog-2-cols .owl-dots .owl-dot span {
+#posts-carousel .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
     margin: 4px;
@@ -1662,12 +1662,12 @@ a.contact-info-value:hover {
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-#carousel-blog-2-cols .owl-dots .owl-dot.active span {
+#posts-carousel .owl-dots .owl-dot.active span {
     background: var(--primary-color);
     transform: scale(1.25);
 }
 
 @media (max-width: 575px) {
-    #carousel-blog-2-cols .owl-prev { left: 6px; }
-    #carousel-blog-2-cols .owl-next { right: 6px; }
+    #posts-carousel .owl-prev { left: 6px; }
+    #posts-carousel .owl-next { right: 6px; }
 }
