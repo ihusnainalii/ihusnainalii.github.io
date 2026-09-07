@@ -1582,3 +1582,92 @@ a.contact-info-value:hover {
     from { opacity: 0; transform: translateY(12px) scale(0.98); }
     to   { opacity: 1; transform: translateY(0) scale(1); }
 }
+
+/* ============================================================
+   BLOG / POSTS — uniform square thumbnails, sharp corners, center-cropped
+   ============================================================ */
+#carousel-blog-2-cols .post-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+#carousel-blog-2-cols .post-image img,
+#carousel-blog-2-cols .post-image:hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-bottom: 0;
+}
+
+/* prev / next arrows */
+#carousel-blog-2-cols .owl-nav {
+    display: block;
+    margin-top: 0;
+}
+
+#carousel-blog-2-cols .owl-prev,
+#carousel-blog-2-cols .owl-next {
+    position: absolute;
+    top: 34%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+    color: #111;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+#carousel-blog-2-cols .owl-prev { left: -16px; }
+#carousel-blog-2-cols .owl-next { right: -16px; }
+
+#carousel-blog-2-cols .owl-prev i,
+#carousel-blog-2-cols .owl-next i {
+    font-size: 20px;
+    line-height: 1;
+}
+
+#carousel-blog-2-cols .owl-prev:hover,
+#carousel-blog-2-cols .owl-next:hover {
+    background: var(--primary-color);
+    color: #06231b;
+    transform: translateY(-50%) scale(1.06);
+}
+
+#carousel-blog-2-cols .owl-prev.disabled,
+#carousel-blog-2-cols .owl-next.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+#carousel-blog-2-cols .owl-dots {
+    text-align: center;
+    margin-top: 22px;
+}
+
+#carousel-blog-2-cols .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 999px;
+    display: block;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#carousel-blog-2-cols .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    transform: scale(1.25);
+}
+
+@media (max-width: 575px) {
+    #carousel-blog-2-cols .owl-prev { left: 6px; }
+    #carousel-blog-2-cols .owl-next { right: 6px; }
+}
