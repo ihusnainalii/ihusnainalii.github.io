@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     skills.forEach(skill => {
         const visual = skill.imageURL
             ? `<img src="${skill.imageURL}" alt="${skill.name}" style="width:48px;height:48px;object-fit:contain;">`
-            : `<div style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,0.08);">
+            : `<div style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:rgba(0,0,0,0.05);">
                    <i class="${skill.icon}" style="font-size:1.6rem;color:${skill.iconColor};"></i>
                </div>`;
 

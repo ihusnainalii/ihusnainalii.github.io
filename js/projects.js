@@ -51,7 +51,7 @@ const projects = [
         title: "KSC APP",
         type: "ios",
         url: "https://apps.apple.com/us/app/ksc-app/id1417115202",
-        description: "Official app for KSC football club — live scores, news, push notifications, and Bluecode payment gateway.",
+        description: "Official app for KSC football club: live scores, news, push notifications, and Bluecode payment gateway.",
         image: "images/projects/ksc.jpg",
         tags: ["Swift", "Socket.io", "Firebase", "RxSwift", "AdMob", "MVVM"]
     },
@@ -59,7 +59,7 @@ const projects = [
         title: "KSC TV",
         type: "tvos",
         url: "https://apps.apple.com/de/app/ksc-tv/id1596881456",
-        description: "Official tvOS streaming app for KSC fans — exclusive live streams, DREI60 videos, and club highlights.",
+        description: "Official tvOS streaming app for KSC fans: exclusive live streams, DREI60 videos, and club highlights.",
         image: "images/projects/ksc_tv.jpg",
         tags: ["tvOS", "Swift", "RxSwift", "Alamofire", "AdMob", "MVVM"]
     },
