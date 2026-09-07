@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /vendor/
+Disallow: /src/
+Disallow: /form/
+
+Sitemap: https://ihusnainalii.github.io/sitemap.xml
