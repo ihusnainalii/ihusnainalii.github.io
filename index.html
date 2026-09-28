@@ -207,6 +207,7 @@
                     <li><a href="#section-services">What I Do<span></span></a></li>
                     <li><a href="#section-portfolio">Mobile Works<span></span></a></li>
                     <li><a href="#section-devops-works">DevOps Works<span></span></a></li>
+                    <li><a href="#section-opensource">Open Source<span></span></a></li>
                     <li><a href="#section-resume">My Resume<span></span></a></li>
                     <li><a href="#section-terminal">CLI Terminal<span></span></a></li>
                     <li><a href="#section-blog">Posts<span></span></a></li>
@@ -427,6 +428,49 @@
                         </div>
                     </div>
                     <div class="devops-works-grid" id="devops-projects-container"></div>
+                </div>
+            </section>
+
+            <section id="section-opensource" class="bg-light-2 section-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h5 class="section-eyebrow wow fadeInUp">Open Source</h5>
+                            <h2 class="wow fadeInUp">Swift Packages I Maintain</h2>
+                            <p class="wow fadeInUp">Zero-dependency Swift packages published on GitHub, each with its own documentation site.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                    <div class="devops-works-grid oss-works-grid" id="opensource-container">
+                        <div class="devops-card wow fadeInUp">
+                            <span class="devops-card-category">Swift Package</span>
+                            <h4 class="devops-card-title">SwiftNetworkKit</h4>
+                            <p class="devops-card-desc">A protocol-oriented networking layer for Apple platforms: typed endpoints, actor-based token refresh, certificate pinning, request deduplication, offline request queueing, and OAuth 2.0 with PKCE. Zero dependencies, Swift 6 strict concurrency.</p>
+                            <div class="devops-card-tags">
+                                <span class="devops-tag">Swift 6</span>
+                                <span class="devops-tag">Networking</span>
+                                <span class="devops-tag">async/await</span>
+                            </div>
+                            <div class="oss-card-links">
+                                <a href="https://github.com/ihusnainalii/SwiftNetworkKit" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://swiftnetworkkit.vercel.app/" target="_blank" rel="noopener"><i class="fa fa-arrow-up-right-from-square"></i> Docs</a>
+                            </div>
+                        </div>
+                        <div class="devops-card wow fadeInUp" data-wow-delay="0.1s">
+                            <span class="devops-card-category">Swift Package</span>
+                            <h4 class="devops-card-title">SwiftLocalStorage</h4>
+                            <p class="devops-card-desc">Type-safe local persistence for Swift: persist your existing Codable DTOs with SwiftData, no @Model entities to write. Cache expiration, indexed queries, live observation, and versioned migrations, with zero dependencies beyond SwiftData.</p>
+                            <div class="devops-card-tags">
+                                <span class="devops-tag">Swift 6</span>
+                                <span class="devops-tag">SwiftData</span>
+                                <span class="devops-tag">Persistence</span>
+                            </div>
+                            <div class="oss-card-links">
+                                <a href="https://github.com/ihusnainalii/SwiftLocalStorage" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://swiftlocalstorage.vercel.app/" target="_blank" rel="noopener"><i class="fa fa-arrow-up-right-from-square"></i> Docs</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -1217,7 +1261,7 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
                 });
             }
 
-            var COMMANDS = ['help', 'about', 'skills', 'mobile', 'devops', 'languages', 'projects', 'experience', 'education', 'relocation', 'services', 'contact', 'resume', 'clear'];
+            var COMMANDS = ['help', 'about', 'skills', 'mobile', 'devops', 'languages', 'projects', 'opensource', 'experience', 'education', 'relocation', 'services', 'contact', 'resume', 'clear'];
 
             var handlers = {
                 help: function () {
@@ -1228,6 +1272,7 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
                         pad('devops', 14) + 'DevOps / cloud skills and projects',
                         pad('languages', 14) + 'Programming language proficiency',
                         pad('projects', 14) + 'All flagship projects',
+                        pad('opensource', 14) + 'Open-source Swift packages',
                         pad('experience', 14) + 'Work history',
                         pad('education', 14) + 'Education',
                         pad('services', 14) + 'What I do',
@@ -1270,7 +1315,14 @@ Type <span class="terminal-hint">'help'</span> to see a list of available comman
                 },
                 projects: function () {
                     return section('Mobile works', projectList('ios-works-container')) +
-                        '\n\n' + section('DevOps works', projectList('devops-projects-container'));
+                        '\n\n' + section('DevOps works', projectList('devops-projects-container')) +
+                        '\n\n' + section('Open source', projectList('opensource-container'));
+                },
+                opensource: function () {
+                    return section('Open-source Swift packages', projectList('opensource-container')) +
+                        '\n\n' + section('Links', all('#opensource-container .oss-card-links a').map(function (a) {
+                            return pad(txt(a), 34) + a.getAttribute('href');
+                        }));
                 },
                 experience: function () {
                     var out = [];
